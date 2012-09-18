@@ -119,6 +119,16 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "ação",
+            "aventura",
+            "comédia",
+            "terror",
+            "suspense",
+            "documentário",
+            "infantil",
+            "romance",
+            "ficção-científica"});
             this.comboBox1.Location = new System.Drawing.Point(62, 112);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(306, 23);
@@ -289,6 +299,16 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "ação",
+            "aventura",
+            "comédia",
+            "terror",
+            "suspense",
+            "documentário",
+            "infantil",
+            "romance",
+            "ficção-científica"});
             this.comboBox2.Location = new System.Drawing.Point(39, 93);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(306, 23);
