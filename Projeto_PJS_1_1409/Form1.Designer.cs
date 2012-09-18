@@ -28,53 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Ação", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Aventura", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Comédia", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Terror", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Suspense", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Documentario", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Infantil", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Romance", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("Ficcao Cientifica", System.Windows.Forms.HorizontalAlignment.Left);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rt1cad = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dt1cad = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb1cad = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tx1cad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lv1cad = new System.Windows.Forms.ListView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tb1pesq = new System.Windows.Forms.TextBox();
+            this.lb1pesq = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt1cad = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dt1pesq = new System.Windows.Forms.DateTimePicker();
+            this.dtpesq = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.rt1pesq = new System.Windows.Forms.RichTextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.cb2pesq = new System.Windows.Forms.ComboBox();
+            this.bt3cad = new System.Windows.Forms.Button();
+            this.bt2cad = new System.Windows.Forms.Button();
+            this.bt1pesq = new System.Windows.Forms.Button();
+            this.bt2pesq = new System.Windows.Forms.Button();
+            this.bt3pesq = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.listView1);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.richTextBox1);
+            this.groupBox1.Controls.Add(this.bt2cad);
+            this.groupBox1.Controls.Add(this.lv1cad);
+            this.groupBox1.Controls.Add(this.bt3cad);
+            this.groupBox1.Controls.Add(this.rt1cad);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dt1cad);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cb1cad);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tx1cad);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.bt1cad);
             this.groupBox1.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(39, 12);
             this.groupBox1.Name = "groupBox1";
@@ -83,13 +92,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro";
             // 
-            // richTextBox1
+            // rt1cad
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(62, 236);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(306, 58);
-            this.richTextBox1.TabIndex = 25;
-            this.richTextBox1.Text = "";
+            this.rt1cad.Location = new System.Drawing.Point(62, 236);
+            this.rt1cad.Name = "rt1cad";
+            this.rt1cad.Size = new System.Drawing.Size(306, 58);
+            this.rt1cad.TabIndex = 25;
+            this.rt1cad.Text = "";
             // 
             // label4
             // 
@@ -100,12 +109,12 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "Local que o filme foi assistido";
             // 
-            // dateTimePicker1
+            // dt1cad
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(62, 178);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(233, 21);
-            this.dateTimePicker1.TabIndex = 23;
+            this.dt1cad.Location = new System.Drawing.Point(62, 178);
+            this.dt1cad.Name = "dt1cad";
+            this.dt1cad.Size = new System.Drawing.Size(233, 21);
+            this.dt1cad.TabIndex = 23;
             // 
             // label3
             // 
@@ -116,10 +125,10 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "Data que o filme foi assistido";
             // 
-            // comboBox1
+            // cb1cad
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cb1cad.FormattingEnabled = true;
+            this.cb1cad.Items.AddRange(new object[] {
             "ação",
             "aventura",
             "comédia",
@@ -129,10 +138,10 @@
             "infantil",
             "romance",
             "ficção-científica"});
-            this.comboBox1.Location = new System.Drawing.Point(62, 112);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(306, 23);
-            this.comboBox1.TabIndex = 21;
+            this.cb1cad.Location = new System.Drawing.Point(62, 112);
+            this.cb1cad.Name = "cb1cad";
+            this.cb1cad.Size = new System.Drawing.Size(306, 23);
+            this.cb1cad.TabIndex = 21;
             // 
             // label2
             // 
@@ -143,12 +152,12 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Gênero";
             // 
-            // textBox1
+            // tx1cad
             // 
-            this.textBox1.Location = new System.Drawing.Point(62, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(306, 21);
-            this.textBox1.TabIndex = 19;
+            this.tx1cad.Location = new System.Drawing.Point(62, 52);
+            this.tx1cad.Name = "tx1cad";
+            this.tx1cad.Size = new System.Drawing.Size(306, 21);
+            this.tx1cad.TabIndex = 19;
             // 
             // label1
             // 
@@ -159,31 +168,59 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Nome do Filme";
             // 
-            // listView1
+            // lv1cad
             // 
-            this.listView1.Location = new System.Drawing.Point(37, 318);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(434, 130);
-            this.listView1.TabIndex = 26;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            listViewGroup1.Header = "Ação";
+            listViewGroup1.Name = "grupoacao";
+            listViewGroup2.Header = "Aventura";
+            listViewGroup2.Name = "grupoaventura";
+            listViewGroup3.Header = "Comédia";
+            listViewGroup3.Name = "grupocomedia";
+            listViewGroup4.Header = "Terror";
+            listViewGroup4.Name = "grupoterror";
+            listViewGroup5.Header = "Suspense";
+            listViewGroup5.Name = "gruposuspense";
+            listViewGroup6.Header = "Documentario";
+            listViewGroup6.Name = "grupodoc";
+            listViewGroup7.Header = "Infantil";
+            listViewGroup7.Name = "grupoinfantil";
+            listViewGroup8.Header = "Romance";
+            listViewGroup8.Name = "gruporomance";
+            listViewGroup9.Header = "Ficcao Cientifica";
+            listViewGroup9.Name = "grupofic";
+            this.lv1cad.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup1,
+            listViewGroup2,
+            listViewGroup3,
+            listViewGroup4,
+            listViewGroup5,
+            listViewGroup6,
+            listViewGroup7,
+            listViewGroup8,
+            listViewGroup9});
+            this.lv1cad.Location = new System.Drawing.Point(37, 318);
+            this.lv1cad.Name = "lv1cad";
+            this.lv1cad.Size = new System.Drawing.Size(434, 130);
+            this.lv1cad.TabIndex = 26;
+            this.lv1cad.UseCompatibleStateImageBehavior = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.bt3pesq);
+            this.groupBox2.Controls.Add(this.bt2pesq);
+            this.groupBox2.Controls.Add(this.bt1pesq);
+            this.groupBox2.Controls.Add(this.cb2pesq);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.richTextBox2);
+            this.groupBox2.Controls.Add(this.rt1pesq);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.dateTimePicker3);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
+            this.groupBox2.Controls.Add(this.dtpesq);
+            this.groupBox2.Controls.Add(this.dt1pesq);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.listBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.lb1pesq);
+            this.groupBox2.Controls.Add(this.tb1pesq);
             this.groupBox2.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(572, 12);
             this.groupBox2.Name = "groupBox2";
@@ -192,21 +229,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pesquisa";
             // 
-            // textBox2
+            // tb1pesq
             // 
-            this.textBox2.Location = new System.Drawing.Point(39, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(352, 21);
-            this.textBox2.TabIndex = 0;
+            this.tb1pesq.Location = new System.Drawing.Point(39, 52);
+            this.tb1pesq.Name = "tb1pesq";
+            this.tb1pesq.Size = new System.Drawing.Size(352, 21);
+            this.tb1pesq.TabIndex = 0;
             // 
-            // listBox1
+            // lb1pesq
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(48, 326);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(446, 109);
-            this.listBox1.TabIndex = 1;
+            this.lb1pesq.FormattingEnabled = true;
+            this.lb1pesq.ItemHeight = 15;
+            this.lb1pesq.Location = new System.Drawing.Point(48, 326);
+            this.lb1pesq.Name = "lb1pesq";
+            this.lb1pesq.Size = new System.Drawing.Size(446, 109);
+            this.lb1pesq.TabIndex = 1;
             // 
             // label5
             // 
@@ -217,15 +254,15 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Digite o título a ser pesquisado:";
             // 
-            // button1
+            // bt1cad
             // 
-            this.button1.Location = new System.Drawing.Point(399, 93);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Pesquisar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bt1cad.Location = new System.Drawing.Point(399, 93);
+            this.bt1cad.Name = "bt1cad";
+            this.bt1cad.Size = new System.Drawing.Size(84, 23);
+            this.bt1cad.TabIndex = 3;
+            this.bt1cad.Text = "Pesquisar";
+            this.bt1cad.UseVisualStyleBackColor = true;
+            this.bt1cad.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -245,21 +282,21 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Selecione o periodo:";
             // 
-            // dateTimePicker2
+            // dt1pesq
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(39, 131);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(215, 19);
-            this.dateTimePicker2.TabIndex = 7;
+            this.dt1pesq.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt1pesq.Location = new System.Drawing.Point(39, 131);
+            this.dt1pesq.Name = "dt1pesq";
+            this.dt1pesq.Size = new System.Drawing.Size(215, 19);
+            this.dt1pesq.TabIndex = 7;
             // 
-            // dateTimePicker3
+            // dtpesq
             // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Location = new System.Drawing.Point(279, 131);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(215, 19);
-            this.dateTimePicker3.TabIndex = 8;
+            this.dtpesq.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpesq.Location = new System.Drawing.Point(279, 131);
+            this.dtpesq.Name = "dtpesq";
+            this.dtpesq.Size = new System.Drawing.Size(215, 19);
+            this.dtpesq.TabIndex = 8;
             // 
             // label8
             // 
@@ -279,13 +316,13 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "Digite o Local a ser pesquisado:";
             // 
-            // richTextBox2
+            // rt1pesq
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(39, 178);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(455, 51);
-            this.richTextBox2.TabIndex = 11;
-            this.richTextBox2.Text = "";
+            this.rt1pesq.Location = new System.Drawing.Point(39, 178);
+            this.rt1pesq.Name = "rt1pesq";
+            this.rt1pesq.Size = new System.Drawing.Size(455, 51);
+            this.rt1pesq.TabIndex = 11;
+            this.rt1pesq.Text = "";
             // 
             // label10
             // 
@@ -296,10 +333,10 @@
             this.label10.TabIndex = 12;
             this.label10.Text = "Itens Pesquisados:";
             // 
-            // comboBox2
+            // cb2pesq
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cb2pesq.FormattingEnabled = true;
+            this.cb2pesq.Items.AddRange(new object[] {
             "ação",
             "aventura",
             "comédia",
@@ -309,55 +346,55 @@
             "infantil",
             "romance",
             "ficção-científica"});
-            this.comboBox2.Location = new System.Drawing.Point(39, 93);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(306, 23);
-            this.comboBox2.TabIndex = 22;
+            this.cb2pesq.Location = new System.Drawing.Point(39, 93);
+            this.cb2pesq.Name = "cb2pesq";
+            this.cb2pesq.Size = new System.Drawing.Size(306, 23);
+            this.cb2pesq.TabIndex = 22;
             // 
-            // button3
+            // bt3cad
             // 
-            this.button3.Location = new System.Drawing.Point(399, 179);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 23);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "Excluir";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bt3cad.Location = new System.Drawing.Point(399, 179);
+            this.bt3cad.Name = "bt3cad";
+            this.bt3cad.Size = new System.Drawing.Size(84, 23);
+            this.bt3cad.TabIndex = 24;
+            this.bt3cad.Text = "Excluir";
+            this.bt3cad.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // bt2cad
             // 
-            this.button4.Location = new System.Drawing.Point(399, 137);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 23);
-            this.button4.TabIndex = 25;
-            this.button4.Text = "Editar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bt2cad.Location = new System.Drawing.Point(399, 137);
+            this.bt2cad.Name = "bt2cad";
+            this.bt2cad.Size = new System.Drawing.Size(84, 23);
+            this.bt2cad.TabIndex = 25;
+            this.bt2cad.Text = "Editar";
+            this.bt2cad.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // bt1pesq
             // 
-            this.button5.Location = new System.Drawing.Point(108, 257);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 23);
-            this.button5.TabIndex = 27;
-            this.button5.Text = "Pesquisar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.bt1pesq.Location = new System.Drawing.Point(108, 257);
+            this.bt1pesq.Name = "bt1pesq";
+            this.bt1pesq.Size = new System.Drawing.Size(84, 23);
+            this.bt1pesq.TabIndex = 27;
+            this.bt1pesq.Text = "Pesquisar";
+            this.bt1pesq.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // bt2pesq
             // 
-            this.button6.Location = new System.Drawing.Point(230, 257);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(84, 23);
-            this.button6.TabIndex = 27;
-            this.button6.Text = "Editar";
-            this.button6.UseVisualStyleBackColor = true;
+            this.bt2pesq.Location = new System.Drawing.Point(230, 257);
+            this.bt2pesq.Name = "bt2pesq";
+            this.bt2pesq.Size = new System.Drawing.Size(84, 23);
+            this.bt2pesq.TabIndex = 27;
+            this.bt2pesq.Text = "Editar";
+            this.bt2pesq.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // bt3pesq
             // 
-            this.button7.Location = new System.Drawing.Point(339, 257);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(84, 23);
-            this.button7.TabIndex = 27;
-            this.button7.Text = "Limpar";
-            this.button7.UseVisualStyleBackColor = true;
+            this.bt3pesq.Location = new System.Drawing.Point(339, 257);
+            this.bt3pesq.Name = "bt3pesq";
+            this.bt3pesq.Size = new System.Drawing.Size(84, 23);
+            this.bt3pesq.TabIndex = 27;
+            this.bt3pesq.Text = "Limpar";
+            this.bt3pesq.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -379,34 +416,34 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rt1cad;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dt1cad;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb1cad;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tx1cad;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lv1cad;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpesq;
+        private System.Windows.Forms.DateTimePicker dt1pesq;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt1cad;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ListBox lb1pesq;
+        private System.Windows.Forms.TextBox tb1pesq;
+        private System.Windows.Forms.ComboBox cb2pesq;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox rt1pesq;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button bt2cad;
+        private System.Windows.Forms.Button bt3cad;
+        private System.Windows.Forms.Button bt3pesq;
+        private System.Windows.Forms.Button bt2pesq;
+        private System.Windows.Forms.Button bt1pesq;
 
     }
 }
