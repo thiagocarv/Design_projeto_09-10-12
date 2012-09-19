@@ -66,6 +66,9 @@
             this.bt1pesq = new System.Windows.Forms.Button();
             this.bt2pesq = new System.Windows.Forms.Button();
             this.bt3pesq = new System.Windows.Forms.Button();
+            this.lvnome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvdata = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvlocal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -170,6 +173,10 @@
             // 
             // lv1cad
             // 
+            this.lv1cad.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvnome,
+            this.lvdata,
+            this.lvlocal});
             listViewGroup1.Header = "Ação";
             listViewGroup1.Name = "grupoacao";
             listViewGroup2.Header = "Aventura";
@@ -203,6 +210,7 @@
             this.lv1cad.Size = new System.Drawing.Size(434, 130);
             this.lv1cad.TabIndex = 26;
             this.lv1cad.UseCompatibleStateImageBehavior = false;
+            this.lv1cad.View = System.Windows.Forms.View.Details;
             // 
             // groupBox2
             // 
@@ -396,6 +404,21 @@
             this.bt3pesq.Text = "Limpar";
             this.bt3pesq.UseVisualStyleBackColor = true;
             // 
+            // lvnome
+            // 
+            this.lvnome.Text = "Nome do filme";
+            this.lvnome.Width = 113;
+            // 
+            // lvdata
+            // 
+            this.lvdata.Text = "Data";
+            this.lvdata.Width = 67;
+            // 
+            // lvlocal
+            // 
+            this.lvlocal.Text = "Local";
+            this.lvlocal.Width = 250;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,6 +467,9 @@
         private System.Windows.Forms.Button bt3pesq;
         private System.Windows.Forms.Button bt2pesq;
         private System.Windows.Forms.Button bt1pesq;
+        private System.Windows.Forms.ColumnHeader lvnome;
+        private System.Windows.Forms.ColumnHeader lvdata;
+        private System.Windows.Forms.ColumnHeader lvlocal;
 
     }
 }
