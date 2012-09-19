@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Ação", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Aventura", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Comédia", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Terror", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Suspense", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Documentario", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Infantil", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Romance", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("Ficcao Cientifica", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ação", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("aventura", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("comédia", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("terror", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("suspense", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("documentario", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("infantil", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("romance", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("ficcao-Cientifica", System.Windows.Forms.HorizontalAlignment.Left);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rt1cad = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -177,23 +177,23 @@
             this.lvnome,
             this.lvdata,
             this.lvlocal});
-            listViewGroup1.Header = "Ação";
+            listViewGroup1.Header = "ação";
             listViewGroup1.Name = "grupoacao";
-            listViewGroup2.Header = "Aventura";
+            listViewGroup2.Header = "aventura";
             listViewGroup2.Name = "grupoaventura";
-            listViewGroup3.Header = "Comédia";
+            listViewGroup3.Header = "comédia";
             listViewGroup3.Name = "grupocomedia";
-            listViewGroup4.Header = "Terror";
+            listViewGroup4.Header = "terror";
             listViewGroup4.Name = "grupoterror";
-            listViewGroup5.Header = "Suspense";
+            listViewGroup5.Header = "suspense";
             listViewGroup5.Name = "gruposuspense";
-            listViewGroup6.Header = "Documentario";
+            listViewGroup6.Header = "documentario";
             listViewGroup6.Name = "grupodoc";
-            listViewGroup7.Header = "Infantil";
+            listViewGroup7.Header = "infantil";
             listViewGroup7.Name = "grupoinfantil";
-            listViewGroup8.Header = "Romance";
+            listViewGroup8.Header = "romance";
             listViewGroup8.Name = "gruporomance";
-            listViewGroup9.Header = "Ficcao Cientifica";
+            listViewGroup9.Header = "ficcao-Cientifica";
             listViewGroup9.Name = "grupofic";
             this.lv1cad.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup1,
