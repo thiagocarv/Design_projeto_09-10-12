@@ -145,6 +145,7 @@
             this.lv1cad.TabIndex = 26;
             this.lv1cad.UseCompatibleStateImageBehavior = false;
             this.lv1cad.View = System.Windows.Forms.View.Details;
+            this.lv1cad.DoubleClick += new System.EventHandler(this.lv1cad_DoubleClick);
             // 
             // lvnome
             // 
@@ -169,6 +170,7 @@
             this.bt3cad.TabIndex = 24;
             this.bt3cad.Text = "Excluir";
             this.bt3cad.UseVisualStyleBackColor = true;
+            this.bt3cad.Click += new System.EventHandler(this.bt3cad_Click);
             // 
             // rt1cad
             // 
@@ -289,6 +291,7 @@
             this.bt3pesq.TabIndex = 27;
             this.bt3pesq.Text = "Limpar";
             this.bt3pesq.UseVisualStyleBackColor = true;
+            this.bt3pesq.Click += new System.EventHandler(this.bt3pesq_Click);
             // 
             // bt2pesq
             // 
