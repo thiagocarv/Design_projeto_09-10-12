@@ -41,6 +41,13 @@ namespace Projeto_PJS_1_1409
             lv1cad.Items.Add(nome);
         }
 
+        public void cadastranodic(string genero)
+        {
+            dic[genero] = new List<Filmes>();
+            dic[genero].Add(filme);
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -53,9 +60,21 @@ namespace Projeto_PJS_1_1409
             string local = rt1cad.Text;
 
             cadastrafilme(nome, genero, data, local);
-            cadastralistview();    
+            cadastralistview();
+            cadastranodic(genero);
             
                             
+        }
+
+        private void bt2cad_Click(object sender, EventArgs e)
+        {
+            foreach (Filmes i in dic[cb1cad.SelectedItem.ToString()])
+            {
+                lb1pesq.Items.Add(filme.genero);
+                lb1pesq.Items.Add(filme.nome);
+                lb1pesq.Items.Add(filme.local);
+                lb1pesq.Items.Add(filme.data);
+            }
         }
     }
 }
