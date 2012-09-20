@@ -8,6 +8,7 @@ namespace Projeto_PJS_1_1409
     class Filmes
     {
         public string nome;
+        public string genero;
         public string data;
         public string local;
 
