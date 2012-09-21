@@ -81,6 +81,8 @@ namespace Projeto_PJS_1_1409
             lv1cad.SelectedItems[0].SubItems[2].Text = rt1cad.Text;
 
             cb1cad.SelectedItem = lv1cad.Groups[0].ToString();
+
+
             /*string chave = cb1cad.SelectedItem.ToString();
             
             foreach (Filmes i in dic[chave])
@@ -105,9 +107,15 @@ namespace Projeto_PJS_1_1409
 
         private void lv1cad_DoubleClick(object sender, EventArgs e)
         {
+            
+        }
+
+        private void lv1cad_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
             tx1cad.Text = lv1cad.SelectedItems[0].Text;
             dt1cad.Value = DateTime.Now;
             rt1cad.Text = lv1cad.SelectedItems[0].SubItems[2].Text;
+            cb1cad.Text = lv1cad.SelectedItems[0].Group.Header;
         }
     }
 }

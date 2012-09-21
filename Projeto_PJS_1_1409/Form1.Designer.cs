@@ -111,6 +111,7 @@
             this.lvnome,
             this.lvdata,
             this.lvlocal});
+            this.lv1cad.FullRowSelect = true;
             listViewGroup1.Header = "ação";
             listViewGroup1.Name = "grupoacao";
             listViewGroup2.Header = "aventura";
@@ -146,6 +147,7 @@
             this.lv1cad.UseCompatibleStateImageBehavior = false;
             this.lv1cad.View = System.Windows.Forms.View.Details;
             this.lv1cad.DoubleClick += new System.EventHandler(this.lv1cad_DoubleClick);
+            this.lv1cad.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lv1cad_MouseDoubleClick);
             // 
             // lvnome
             // 
