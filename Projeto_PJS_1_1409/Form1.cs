@@ -14,12 +14,14 @@ namespace Projeto_PJS_1_1409
     {
         Filmes filme = new Filmes();
         Dictionary<string, List<Filmes>> dic = new Dictionary<string, List<Filmes>>();
+        ListViewItem nome = new ListViewItem();
 
         public Form1()
         {
             InitializeComponent();
         }
 
+        //rotina de cadastro de filmes
         public void cadastrafilme(string nome, string genero, string data, string local)
         {
             filme.nome = nome;
@@ -28,10 +30,12 @@ namespace Projeto_PJS_1_1409
             filme.local = local;
         }
 
+        //rotina no list view
         public void cadastralistview()
         {
-            ListViewItem nome = new ListViewItem();
+            //ListViewItem nome = new ListViewItem();
 
+            nome = new ListViewItem();
             nome.Text = tx1cad.Text;
             nome.Group = lv1cad.Groups[cb1cad.SelectedIndex];
 
@@ -41,6 +45,7 @@ namespace Projeto_PJS_1_1409
             lv1cad.Items.Add(nome);
         }
 
+        //rotina de cadastro no dicionario
         public void cadastranodic(string genero)
         {
             if (dic.ContainsKey(genero))
@@ -59,9 +64,6 @@ namespace Projeto_PJS_1_1409
         private void button1_Click(object sender, EventArgs e)
         {
             
-           //código de cadastro no listview
-                //lv1cad.Groups.Add(cb1cad.SelectedIndex.ToString(), cb1cad.SelectedItem.ToString());
-
             string nome = tx1cad.Text;
             string genero = cb1cad.SelectedItem.ToString();
             string data = dt1cad.Value.ToShortDateString().ToString();
@@ -76,23 +78,11 @@ namespace Projeto_PJS_1_1409
 
         private void bt2cad_Click(object sender, EventArgs e)
         {
-            lv1cad.SelectedItems[0].Text = tx1cad.Text;
-            lv1cad.SelectedItems[0].SubItems[1].Text = dt1cad.Value.ToShortDateString().ToString();
-            lv1cad.SelectedItems[0].SubItems[2].Text = rt1cad.Text;
+            string genero = cb1cad.SelectedItem.ToString();
 
-            cb1cad.SelectedItem = lv1cad.Groups[0].ToString();
-
-
-            /*string chave = cb1cad.SelectedItem.ToString();
-            
-            foreach (Filmes i in dic[chave])
-            {
-                lb1pesq.Items.Add(filme.genero);
-                lb1pesq.Items.Add(filme.nome);
-                lb1pesq.Items.Add(filme.local);
-                lb1pesq.Items.Add(filme.data);
-                
-            }*/
+            cadastralistview();
+            cadastranodic(genero);
+            lv1cad.SelectedItems[0].Remove();              
         }
 
         private void bt3pesq_Click(object sender, EventArgs e)
