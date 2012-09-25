@@ -12,7 +12,10 @@ namespace Projeto_PJS_1_1409
     
     public partial class Form1 : Form
     {
-        Filmes filme = new Filmes();
+        Filmes filme;
+
+        Filmes editafilme = new Filmes();
+
         Dictionary<string, List<Filmes>> dic = new Dictionary<string, List<Filmes>>();
         ListViewItem nome = new ListViewItem();
 
@@ -24,12 +27,14 @@ namespace Projeto_PJS_1_1409
         //rotina de cadastro de filmes
         public void cadastrafilme(string nome, string genero, string data, string local)
         {
+            filme = new Filmes();
             filme.nome = nome;
             filme.genero = genero;
             filme.data = data;
             filme.local = local;
         }
 
+       
         //rotina no list view
         public void cadastralistview()
         {
@@ -61,9 +66,19 @@ namespace Projeto_PJS_1_1409
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+       private void lv1cad_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            string nome = tx1cad.Text = lv1cad.SelectedItems[0].Text;
+            dt1cad.Value = DateTime.Now;
+            rt1cad.Text = lv1cad.SelectedItems[0].SubItems[2].Text;
+            string genero = cb1cad.Text = lv1cad.SelectedItems[0].Group.Header;
+
             
+        }
+
+        private void btCad_Click_1(object sender, EventArgs e)
+        {
             string nome = tx1cad.Text;
             string genero = cb1cad.SelectedItem.ToString();
             string data = dt1cad.Value.ToShortDateString().ToString();
@@ -72,40 +87,59 @@ namespace Projeto_PJS_1_1409
             cadastrafilme(nome, genero, data, local);
             cadastralistview();
             cadastranodic(genero);
-            
-                            
         }
 
-        private void bt2cad_Click(object sender, EventArgs e)
+        private void bteditcadastro_Click(object sender, EventArgs e)
         {
             string genero = cb1cad.SelectedItem.ToString();
-
+            
             cadastralistview();
-            cadastranodic(genero);
-            lv1cad.SelectedItems[0].Remove();              
+            
+            lv1cad.SelectedItems[0].Remove();
+
+            if (dic.ContainsKey(genero))
+            {
+                foreach (List<Filmes> i in dic.Values)
+                {
+                    foreach (Filmes j in i)
+                        if(j.nome == tx1cad.Text)
+                        {
+                            i.Add(filme);
+                        }
+
+                 }
+            }
+                                 
+
         }
 
-        private void bt3pesq_Click(object sender, EventArgs e)
-        {
-            lb1pesq.Items.Clear();
-        }
-
-        private void bt3cad_Click(object sender, EventArgs e)
+        private void btexcluircadastro_Click(object sender, EventArgs e)
         {
             lv1cad.SelectedItems[0].Remove();
         }
 
-        private void lv1cad_DoubleClick(object sender, EventArgs e)
+        private void btpesquisa_Click(object sender, EventArgs e)
         {
-            
+
+            foreach (List<Filmes> i in dic.Values)
+            {
+                foreach (Filmes j in i)
+                {
+                    lbpesq.Items.Add(j.nome);
+                    lbpesq.Items.Add(j.genero);
+                    lbpesq.Items.Add(j.data);
+                    lbpesq.Items.Add(j.local);
+                }
+            }
         }
 
-        private void lv1cad_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void btexcluipesquisa_Click(object sender, EventArgs e)
         {
-            tx1cad.Text = lv1cad.SelectedItems[0].Text;
-            dt1cad.Value = DateTime.Now;
-            rt1cad.Text = lv1cad.SelectedItems[0].SubItems[2].Text;
-            cb1cad.Text = lv1cad.SelectedItems[0].Group.Header;
+            lbpesq.Items.Clear();
         }
+
+       
+
+        
     }
 }

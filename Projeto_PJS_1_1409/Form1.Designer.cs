@@ -38,12 +38,12 @@
             System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("romance", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("ficcao-Cientifica", System.Windows.Forms.HorizontalAlignment.Left);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bt2cad = new System.Windows.Forms.Button();
+            this.bteditcadastro = new System.Windows.Forms.Button();
             this.lv1cad = new System.Windows.Forms.ListView();
             this.lvnome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvdata = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvlocal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.bt3cad = new System.Windows.Forms.Button();
+            this.btexcluircadastro = new System.Windows.Forms.Button();
             this.rt1cad = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dt1cad = new System.Windows.Forms.DateTimePicker();
@@ -52,11 +52,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tx1cad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bt1cad = new System.Windows.Forms.Button();
+            this.btCad = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.bt3pesq = new System.Windows.Forms.Button();
-            this.bt2pesq = new System.Windows.Forms.Button();
-            this.bt1pesq = new System.Windows.Forms.Button();
+            this.btexcluipesquisa = new System.Windows.Forms.Button();
+            this.bteditapesquisa = new System.Windows.Forms.Button();
+            this.btpesquisa = new System.Windows.Forms.Button();
             this.cb2pesq = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.rt1pesq = new System.Windows.Forms.RichTextBox();
@@ -67,7 +67,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lb1pesq = new System.Windows.Forms.ListBox();
+            this.lbpesq = new System.Windows.Forms.ListBox();
             this.tb1pesq = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -75,9 +75,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.bt2cad);
+            this.groupBox1.Controls.Add(this.bteditcadastro);
             this.groupBox1.Controls.Add(this.lv1cad);
-            this.groupBox1.Controls.Add(this.bt3cad);
+            this.groupBox1.Controls.Add(this.btexcluircadastro);
             this.groupBox1.Controls.Add(this.rt1cad);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.dt1cad);
@@ -86,7 +86,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.tx1cad);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.bt1cad);
+            this.groupBox1.Controls.Add(this.btCad);
             this.groupBox1.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(39, 12);
             this.groupBox1.Name = "groupBox1";
@@ -95,15 +95,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro";
             // 
-            // bt2cad
+            // bteditcadastro
             // 
-            this.bt2cad.Location = new System.Drawing.Point(399, 137);
-            this.bt2cad.Name = "bt2cad";
-            this.bt2cad.Size = new System.Drawing.Size(84, 23);
-            this.bt2cad.TabIndex = 25;
-            this.bt2cad.Text = "Editar";
-            this.bt2cad.UseVisualStyleBackColor = true;
-            this.bt2cad.Click += new System.EventHandler(this.bt2cad_Click);
+            this.bteditcadastro.Location = new System.Drawing.Point(399, 137);
+            this.bteditcadastro.Name = "bteditcadastro";
+            this.bteditcadastro.Size = new System.Drawing.Size(84, 23);
+            this.bteditcadastro.TabIndex = 25;
+            this.bteditcadastro.Text = "Editar";
+            this.bteditcadastro.UseVisualStyleBackColor = true;
+            this.bteditcadastro.Click += new System.EventHandler(this.bteditcadastro_Click);
             // 
             // lv1cad
             // 
@@ -146,7 +146,6 @@
             this.lv1cad.TabIndex = 26;
             this.lv1cad.UseCompatibleStateImageBehavior = false;
             this.lv1cad.View = System.Windows.Forms.View.Details;
-            this.lv1cad.DoubleClick += new System.EventHandler(this.lv1cad_DoubleClick);
             this.lv1cad.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lv1cad_MouseDoubleClick);
             // 
             // lvnome
@@ -164,15 +163,15 @@
             this.lvlocal.Text = "Local";
             this.lvlocal.Width = 250;
             // 
-            // bt3cad
+            // btexcluircadastro
             // 
-            this.bt3cad.Location = new System.Drawing.Point(399, 179);
-            this.bt3cad.Name = "bt3cad";
-            this.bt3cad.Size = new System.Drawing.Size(84, 23);
-            this.bt3cad.TabIndex = 24;
-            this.bt3cad.Text = "Excluir";
-            this.bt3cad.UseVisualStyleBackColor = true;
-            this.bt3cad.Click += new System.EventHandler(this.bt3cad_Click);
+            this.btexcluircadastro.Location = new System.Drawing.Point(399, 179);
+            this.btexcluircadastro.Name = "btexcluircadastro";
+            this.btexcluircadastro.Size = new System.Drawing.Size(84, 23);
+            this.btexcluircadastro.TabIndex = 24;
+            this.btexcluircadastro.Text = "Excluir";
+            this.btexcluircadastro.UseVisualStyleBackColor = true;
+            this.btexcluircadastro.Click += new System.EventHandler(this.btexcluircadastro_Click);
             // 
             // rt1cad
             // 
@@ -250,21 +249,21 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Nome do Filme";
             // 
-            // bt1cad
+            // btCad
             // 
-            this.bt1cad.Location = new System.Drawing.Point(399, 93);
-            this.bt1cad.Name = "bt1cad";
-            this.bt1cad.Size = new System.Drawing.Size(84, 23);
-            this.bt1cad.TabIndex = 3;
-            this.bt1cad.Text = "Cadastrar";
-            this.bt1cad.UseVisualStyleBackColor = true;
-            this.bt1cad.Click += new System.EventHandler(this.button1_Click);
+            this.btCad.Location = new System.Drawing.Point(399, 93);
+            this.btCad.Name = "btCad";
+            this.btCad.Size = new System.Drawing.Size(84, 23);
+            this.btCad.TabIndex = 3;
+            this.btCad.Text = "Cadastrar";
+            this.btCad.UseVisualStyleBackColor = true;
+            this.btCad.Click += new System.EventHandler(this.btCad_Click_1);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.bt3pesq);
-            this.groupBox2.Controls.Add(this.bt2pesq);
-            this.groupBox2.Controls.Add(this.bt1pesq);
+            this.groupBox2.Controls.Add(this.btexcluipesquisa);
+            this.groupBox2.Controls.Add(this.bteditapesquisa);
+            this.groupBox2.Controls.Add(this.btpesquisa);
             this.groupBox2.Controls.Add(this.cb2pesq);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.rt1pesq);
@@ -275,7 +274,7 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.lb1pesq);
+            this.groupBox2.Controls.Add(this.lbpesq);
             this.groupBox2.Controls.Add(this.tb1pesq);
             this.groupBox2.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(572, 12);
@@ -285,33 +284,34 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pesquisa";
             // 
-            // bt3pesq
+            // btexcluipesquisa
             // 
-            this.bt3pesq.Location = new System.Drawing.Point(339, 257);
-            this.bt3pesq.Name = "bt3pesq";
-            this.bt3pesq.Size = new System.Drawing.Size(84, 23);
-            this.bt3pesq.TabIndex = 27;
-            this.bt3pesq.Text = "Limpar";
-            this.bt3pesq.UseVisualStyleBackColor = true;
-            this.bt3pesq.Click += new System.EventHandler(this.bt3pesq_Click);
+            this.btexcluipesquisa.Location = new System.Drawing.Point(339, 257);
+            this.btexcluipesquisa.Name = "btexcluipesquisa";
+            this.btexcluipesquisa.Size = new System.Drawing.Size(84, 23);
+            this.btexcluipesquisa.TabIndex = 27;
+            this.btexcluipesquisa.Text = "Limpar";
+            this.btexcluipesquisa.UseVisualStyleBackColor = true;
+            this.btexcluipesquisa.Click += new System.EventHandler(this.btexcluipesquisa_Click);
             // 
-            // bt2pesq
+            // bteditapesquisa
             // 
-            this.bt2pesq.Location = new System.Drawing.Point(230, 257);
-            this.bt2pesq.Name = "bt2pesq";
-            this.bt2pesq.Size = new System.Drawing.Size(84, 23);
-            this.bt2pesq.TabIndex = 27;
-            this.bt2pesq.Text = "Editar";
-            this.bt2pesq.UseVisualStyleBackColor = true;
+            this.bteditapesquisa.Location = new System.Drawing.Point(230, 257);
+            this.bteditapesquisa.Name = "bteditapesquisa";
+            this.bteditapesquisa.Size = new System.Drawing.Size(84, 23);
+            this.bteditapesquisa.TabIndex = 27;
+            this.bteditapesquisa.Text = "Editar";
+            this.bteditapesquisa.UseVisualStyleBackColor = true;
             // 
-            // bt1pesq
+            // btpesquisa
             // 
-            this.bt1pesq.Location = new System.Drawing.Point(108, 257);
-            this.bt1pesq.Name = "bt1pesq";
-            this.bt1pesq.Size = new System.Drawing.Size(84, 23);
-            this.bt1pesq.TabIndex = 27;
-            this.bt1pesq.Text = "Pesquisar";
-            this.bt1pesq.UseVisualStyleBackColor = true;
+            this.btpesquisa.Location = new System.Drawing.Point(108, 257);
+            this.btpesquisa.Name = "btpesquisa";
+            this.btpesquisa.Size = new System.Drawing.Size(84, 23);
+            this.btpesquisa.TabIndex = 27;
+            this.btpesquisa.Text = "Pesquisar";
+            this.btpesquisa.UseVisualStyleBackColor = true;
+            this.btpesquisa.Click += new System.EventHandler(this.btpesquisa_Click);
             // 
             // cb2pesq
             // 
@@ -409,14 +409,14 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Digite o título a ser pesquisado:";
             // 
-            // lb1pesq
+            // lbpesq
             // 
-            this.lb1pesq.FormattingEnabled = true;
-            this.lb1pesq.ItemHeight = 15;
-            this.lb1pesq.Location = new System.Drawing.Point(48, 326);
-            this.lb1pesq.Name = "lb1pesq";
-            this.lb1pesq.Size = new System.Drawing.Size(446, 109);
-            this.lb1pesq.TabIndex = 1;
+            this.lbpesq.FormattingEnabled = true;
+            this.lbpesq.ItemHeight = 15;
+            this.lbpesq.Location = new System.Drawing.Point(48, 326);
+            this.lbpesq.Name = "lbpesq";
+            this.lbpesq.Size = new System.Drawing.Size(446, 109);
+            this.lbpesq.TabIndex = 1;
             // 
             // tb1pesq
             // 
@@ -460,19 +460,19 @@
         private System.Windows.Forms.DateTimePicker dt1pesq;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button bt1cad;
+        private System.Windows.Forms.Button btCad;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListBox lb1pesq;
+        private System.Windows.Forms.ListBox lbpesq;
         private System.Windows.Forms.TextBox tb1pesq;
         private System.Windows.Forms.ComboBox cb2pesq;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RichTextBox rt1pesq;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button bt2cad;
-        private System.Windows.Forms.Button bt3cad;
-        private System.Windows.Forms.Button bt3pesq;
-        private System.Windows.Forms.Button bt2pesq;
-        private System.Windows.Forms.Button bt1pesq;
+        private System.Windows.Forms.Button bteditcadastro;
+        private System.Windows.Forms.Button btexcluircadastro;
+        private System.Windows.Forms.Button btexcluipesquisa;
+        private System.Windows.Forms.Button bteditapesquisa;
+        private System.Windows.Forms.Button btpesquisa;
         private System.Windows.Forms.ColumnHeader lvnome;
         private System.Windows.Forms.ColumnHeader lvdata;
         private System.Windows.Forms.ColumnHeader lvlocal;
