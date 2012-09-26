@@ -19,6 +19,10 @@ namespace Projeto_PJS_1_1409
         Dictionary<string, List<Filmes>> dic = new Dictionary<string, List<Filmes>>();
         ListViewItem nome = new ListViewItem();
 
+        string pega;
+        string peganome;
+
+        
         public Form1()
         {
             InitializeComponent();
@@ -34,7 +38,7 @@ namespace Projeto_PJS_1_1409
             filme.local = local;
         }
 
-       
+                      
         //rotina no list view
         public void cadastralistview()
         {
@@ -49,6 +53,8 @@ namespace Projeto_PJS_1_1409
 
             lv1cad.Items.Add(nome);
         }
+
+       
 
         //rotina de cadastro no dicionario
         public void cadastranodic(string genero)
@@ -69,12 +75,13 @@ namespace Projeto_PJS_1_1409
        
        private void lv1cad_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            string nome = tx1cad.Text = lv1cad.SelectedItems[0].Text;
-            dt1cad.Value = DateTime.Now;
+            tx1cad.Text = lv1cad.SelectedItems[0].Text;
+            dt1cad.Value.ToShortDateString().ToString();
             rt1cad.Text = lv1cad.SelectedItems[0].SubItems[2].Text;
-            string genero = cb1cad.Text = lv1cad.SelectedItems[0].Group.Header;
-
-            
+            cb1cad.Text = lv1cad.SelectedItems[0].Group.Header;
+            pega = cb1cad.SelectedItem.ToString();
+            peganome = tx1cad.Text;
+                        
         }
 
         private void btCad_Click_1(object sender, EventArgs e)
@@ -91,25 +98,27 @@ namespace Projeto_PJS_1_1409
 
         private void bteditcadastro_Click(object sender, EventArgs e)
         {
-            string genero = cb1cad.SelectedItem.ToString();
-            
+                       
             cadastralistview();
             
             lv1cad.SelectedItems[0].Remove();
 
-            if (dic.ContainsKey(genero))
+            if(dic.ContainsKey(pega))
             {
                 foreach (List<Filmes> i in dic.Values)
                 {
-                    foreach (Filmes j in i)
-                        if(j.nome == tx1cad.Text)
+                    foreach(Filmes editafilme in i)
+                    {
+                        if (editafilme.nome == tx1cad.Text && editafilme.local == rt1cad.Text)
                         {
-                            i.Add(filme);
+                            editafilme.nome = tx1cad.Text;
+                            editafilme.genero = cb1cad.SelectedItem.ToString();
+                            editafilme.data = dt1cad.Value.ToString();
+                            editafilme.local = rt1cad.Text;
                         }
-
-                 }
-            }
-                                 
+                    }
+                }
+            }                 
 
         }
 
@@ -129,6 +138,7 @@ namespace Projeto_PJS_1_1409
                     lbpesq.Items.Add(j.genero);
                     lbpesq.Items.Add(j.data);
                     lbpesq.Items.Add(j.local);
+                    
                 }
             }
         }
