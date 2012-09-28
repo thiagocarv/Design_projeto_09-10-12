@@ -143,29 +143,39 @@ namespace Projeto_PJS_1_1409
 
         private void btpesquisa_Click(object sender, EventArgs e)
         {
+            lvpesq.Items.Clear();
+
             List<Filmes> listapesq = new List<Filmes>();
+            
 
             foreach (List<Filmes> l in dic.Values)
                 listapesq.AddRange(l);
 
             for (int k = 0; k < listapesq.Count; k++)
             {
-                if (listapesq[k].genero != cb2pesq.SelectedItem.ToString())
+                if (cb2pesq.SelectedIndex == 10)
+                    break;
+                else
                 {
-                    listapesq.Remove(listapesq[k]);
+                    if (listapesq[k].genero == cb2pesq.SelectedItem.ToString())
+                    {
+                        listapesq.Remove(listapesq[k]);
+                    }
                 }
 
             }
+
             for (int k = 0; k < listapesq.Count; k++)
             {
                 if (tb1pesq.Text != "")
                 {
-                    if (listapesq[k].nome != tb1pesq.Text)
+                    if (!listapesq[k].nome.Contains(tb1pesq.Text))
                     {
                         listapesq.Remove(listapesq[k]);
                     }
                 }
             }
+
             for (int k = 0; k < listapesq.Count; k++)
             {
                 if (rt1pesq.Text != "")
@@ -189,6 +199,7 @@ namespace Projeto_PJS_1_1409
 
                 lvpesq.Items.Add(nome);
             }
+
             listapesq.Clear();
 
         }
