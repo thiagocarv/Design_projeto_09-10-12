@@ -179,6 +179,16 @@ namespace Projeto_PJS_1_1409
                 }
             }
 
+            for (int k = 0; k < listapesq.Count; k++)
+            {
+                {
+                    if (Convert.ToDateTime(listapesq[k].data.ToShortDateString()) < Convert.ToDateTime(dt1pesq.Value.ToShortDateString()) || listapesq[k].data > Convert.ToDateTime(dtpesq.Value.ToShortDateString()))
+                    {
+                        listapesq.Remove(listapesq[k]);
+                    }
+                }
+            }
+            
 
             for (int k = 0; k < listapesq.Count; k++)
             {
