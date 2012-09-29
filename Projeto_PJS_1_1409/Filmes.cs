@@ -9,7 +9,7 @@ namespace Projeto_PJS_1_1409
     {
         public string nome;
         public string genero;
-        public string data;
+        public DateTime data;
         public string local;
 
     }

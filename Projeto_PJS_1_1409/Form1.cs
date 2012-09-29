@@ -30,7 +30,7 @@ namespace Projeto_PJS_1_1409
         }
 
         //rotina de cadastro de filmes
-        public void cadastrafilme(string nome, string genero, string data, string local)
+        public void cadastrafilme(string nome, string genero, DateTime data, string local)
         {
             filme = new Filmes();
             filme.nome = nome;
@@ -87,7 +87,7 @@ namespace Projeto_PJS_1_1409
                         {
                             k.nome = tx1cad.Text;
                             k.genero = cb1cad.SelectedItem.ToString();
-                            k.data = dt1cad.Value.ToString();
+                            k.data = dt1cad.Value;
                             k.local = rt1cad.Text;
                         }
                     }
@@ -106,7 +106,7 @@ namespace Projeto_PJS_1_1409
             
             editafilme.nome = tx1cad.Text;
             editafilme.genero = cb1cad.SelectedItem.ToString();
-            editafilme.data = dt1cad.Value.ToString();
+            editafilme.data = dt1cad.Value;
             editafilme.local = rt1cad.Text;
             
             pega = cb1cad.SelectedItem.ToString();
@@ -118,7 +118,7 @@ namespace Projeto_PJS_1_1409
         {
             string nome = tx1cad.Text;
             string genero = cb1cad.SelectedItem.ToString();
-            string data = dt1cad.Value.ToShortDateString().ToString();
+            DateTime data = dt1cad.Value;
             string local = rt1cad.Text;
 
             cadastrafilme(nome, genero, data, local);
@@ -153,16 +153,8 @@ namespace Projeto_PJS_1_1409
 
             for (int k = 0; k < listapesq.Count; k++)
             {
-                if (cb2pesq.SelectedIndex == 10)
-                    break;
-                else
-                {
-                    if (listapesq[k].genero == cb2pesq.SelectedItem.ToString())
-                    {
-                        listapesq.Remove(listapesq[k]);
-                    }
-                }
-
+                if (listapesq[k].genero != cb2pesq.SelectedItem.ToString() && cb2pesq.SelectedIndex != 9)
+                      listapesq.Remove(listapesq[k]);                              
             }
 
             for (int k = 0; k < listapesq.Count; k++)
@@ -194,7 +186,7 @@ namespace Projeto_PJS_1_1409
                 nome.Text = listapesq[k].nome;
                 nome.Group = lvpesq.Groups[listapesq[k].genero];
 
-                nome.SubItems.Add(listapesq[k].data);
+                nome.SubItems.Add(listapesq[k].data.ToShortDateString());
                 nome.SubItems.Add(listapesq[k].local);
 
                 lvpesq.Items.Add(nome);
@@ -208,6 +200,11 @@ namespace Projeto_PJS_1_1409
         private void btexcluipesquisa_Click(object sender, EventArgs e)
         {
             lvpesq.Items.Clear();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cb2pesq.SelectedIndex = 9;
         }
 
        
