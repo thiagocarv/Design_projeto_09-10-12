@@ -138,22 +138,26 @@ namespace Projeto_PJS_1_1409
 
         private void btexcluircadastro_Click(object sender, EventArgs e)
         {
-            int k = 0;
+            int k;
+            
+            string teste = lv1cad.SelectedItems[0].Group.ToString();
+            string teste1 = lv1cad.SelectedItems[0].Text;
+
             foreach (List<Filmes> l in dic.Values)
-                while (k < l.Count)
+            {
+                for (k = 0; k < l.Count;k++ )
                 {
-                    if (l[k].genero == lv1cad.SelectedItems[0].Group.Header && l[k].nome == lv1cad.SelectedItems[0].Text)
+
+                    if (l[k].genero == teste && l[k].nome == teste1)
                     {
-                        l.Remove(l[k]);
-                        lv1cad.SelectedItems[0].Remove();
-                        if (dic[lv1cad.SelectedItems[0].Group.Header].Count == 0)
-                          dic[lv1cad.SelectedItems[0].Group.Header].Clear();
+                        l.Remove(filme);
+
                     }
-                    else
-                        k = k + 1;
-                }
-            
-            
+
+                }                
+            }
+
+            lv1cad.SelectedItems[0].Remove();
         }
 
         //rotinas do botão pesquisar

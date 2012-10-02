@@ -68,7 +68,6 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btexcluipesquisa = new System.Windows.Forms.Button();
-            this.bteditapesquisa = new System.Windows.Forms.Button();
             this.btpesquisa = new System.Windows.Forms.Button();
             this.cb2pesq = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -275,7 +274,6 @@
             // 
             this.groupBox2.Controls.Add(this.lvpesq);
             this.groupBox2.Controls.Add(this.btexcluipesquisa);
-            this.groupBox2.Controls.Add(this.bteditapesquisa);
             this.groupBox2.Controls.Add(this.btpesquisa);
             this.groupBox2.Controls.Add(this.cb2pesq);
             this.groupBox2.Controls.Add(this.label10);
@@ -355,7 +353,7 @@
             // 
             // btexcluipesquisa
             // 
-            this.btexcluipesquisa.Location = new System.Drawing.Point(339, 257);
+            this.btexcluipesquisa.Location = new System.Drawing.Point(297, 257);
             this.btexcluipesquisa.Name = "btexcluipesquisa";
             this.btexcluipesquisa.Size = new System.Drawing.Size(84, 23);
             this.btexcluipesquisa.TabIndex = 27;
@@ -363,18 +361,9 @@
             this.btexcluipesquisa.UseVisualStyleBackColor = true;
             this.btexcluipesquisa.Click += new System.EventHandler(this.btexcluipesquisa_Click);
             // 
-            // bteditapesquisa
-            // 
-            this.bteditapesquisa.Location = new System.Drawing.Point(230, 257);
-            this.bteditapesquisa.Name = "bteditapesquisa";
-            this.bteditapesquisa.Size = new System.Drawing.Size(84, 23);
-            this.bteditapesquisa.TabIndex = 27;
-            this.bteditapesquisa.Text = "Editar";
-            this.bteditapesquisa.UseVisualStyleBackColor = true;
-            // 
             // btpesquisa
             // 
-            this.btpesquisa.Location = new System.Drawing.Point(108, 257);
+            this.btpesquisa.Location = new System.Drawing.Point(136, 257);
             this.btpesquisa.Name = "btpesquisa";
             this.btpesquisa.Size = new System.Drawing.Size(84, 23);
             this.btpesquisa.TabIndex = 27;
@@ -532,7 +521,6 @@
         private System.Windows.Forms.Button bteditcadastro;
         private System.Windows.Forms.Button btexcluircadastro;
         private System.Windows.Forms.Button btexcluipesquisa;
-        private System.Windows.Forms.Button bteditapesquisa;
         private System.Windows.Forms.Button btpesquisa;
         private System.Windows.Forms.ColumnHeader lvnome;
         private System.Windows.Forms.ColumnHeader lvdata;
