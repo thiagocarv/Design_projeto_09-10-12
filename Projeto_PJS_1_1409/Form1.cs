@@ -138,25 +138,49 @@ namespace Projeto_PJS_1_1409
 
         private void btexcluircadastro_Click(object sender, EventArgs e)
         {
-            lv1cad.SelectedItems[0].Remove();
+            int k = 0;
+            foreach (List<Filmes> l in dic.Values)
+                while (k < l.Count)
+                {
+                    if (l[k].genero == lv1cad.SelectedItems[0].Group.Header && l[k].nome == lv1cad.SelectedItems[0].Text)
+                    {
+                        l.Remove(l[k]);
+                        lv1cad.SelectedItems[0].Remove();
+                        if (dic[lv1cad.SelectedItems[0].Group.Header].Count == 0)
+                          dic[lv1cad.SelectedItems[0].Group.Header].Clear();
+                    }
+                    else
+                        k = k + 1;
+                }
+            
+            
         }
 
+        //rotinas do botão pesquisar
         private void btpesquisa_Click(object sender, EventArgs e)
         {
             lvpesq.Items.Clear();
 
             List<Filmes> listapesq = new List<Filmes>();
             
-
+           
             foreach (List<Filmes> l in dic.Values)
                 listapesq.AddRange(l);
 
-            for (int k = 0; k < listapesq.Count; k++)
+            //pesquisa por genero
+            for (int k = 0; k < listapesq.Count;)
             {
-                if (listapesq[k].genero != cb2pesq.SelectedItem.ToString() && cb2pesq.SelectedIndex != 9)
-                      listapesq.Remove(listapesq[k]);                              
-            }
+                if (cb2pesq.SelectedIndex == 9)
+                    break;
+                if (listapesq[k].genero != cb2pesq.SelectedItem.ToString())
+                {
+                    listapesq.Remove(listapesq[k]);
+                }
+                else
+                k++;
+            }  
 
+            //rotina de pesquisa por nome
             for (int k = 0; k < listapesq.Count; k++)
             {
                 if (tb1pesq.Text != "")
@@ -168,28 +192,37 @@ namespace Projeto_PJS_1_1409
                 }
             }
 
+            //rotina de pesquisa por local
             for (int k = 0; k < listapesq.Count; k++)
             {
                 if (rt1pesq.Text != "")
                 {
-                    if (listapesq[k].local != rt1pesq.Text)
+                    if (listapesq[k].local.Contains(rt1pesq.Text))
                     {
                         listapesq.Remove(listapesq[k]);
                     }
                 }
             }
 
+            //rotina de pesquisa por data
             for (int k = 0; k < listapesq.Count; k++)
             {
+                if (Convert.ToDateTime(dtpesq.Value.ToShortDateString()) < Convert.ToDateTime(dt1pesq.Value.ToShortDateString()))
                 {
-                    if (Convert.ToDateTime(listapesq[k].data.ToShortDateString()) < Convert.ToDateTime(dt1pesq.Value.ToShortDateString()) || listapesq[k].data > Convert.ToDateTime(dtpesq.Value.ToShortDateString()))
+                    listapesq.Clear();
+                    MessageBox.Show("A primeira data tem que ser menor que a segunda data", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+
+                    if (Convert.ToDateTime(listapesq[k].data.ToShortDateString()) < Convert.ToDateTime(dt1pesq.Value.ToShortDateString()) || Convert.ToDateTime(listapesq[k].data.ToShortDateString()) > Convert.ToDateTime(dtpesq.Value.ToShortDateString()))
                     {
                         listapesq.Remove(listapesq[k]);
                     }
                 }
             }
             
-
+            //após a pesquisa o preenchimento do listview
             for (int k = 0; k < listapesq.Count; k++)
             {
                 nome = new ListViewItem();
