@@ -81,22 +81,25 @@ namespace Projeto_PJS_1_1409
             {
                 foreach (List<Filmes> i in dic.Values)
                 {
-                    foreach (Filmes k in i)
+                    for (int k = 0;k < i.Count; k++ )
                     {
-                        if (k.nome == editafilme.nome && k.local == editafilme.local)
+                        if (i[k].nome == editafilme.nome && i[k].local == editafilme.local)
                         {
-                            k.nome = tx1cad.Text;
-                            k.genero = cb1cad.SelectedItem.ToString();
-                            k.data = dt1cad.Value;
-                            k.local = rt1cad.Text;
+                            i[k].nome = tx1cad.Text;
+                            i[k].genero = cb1cad.SelectedItem.ToString();
+                            i[k].data = dt1cad.Value;
+                            i[k].local = rt1cad.Text;
+                            
                         }
                     }
                 }
-            }                 
+                
+            }              
+   
 
         }
 
-       
+       //rotina executada quando omouse é clicado duas vezes no cadastro
        private void lv1cad_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             tx1cad.Text = lv1cad.SelectedItems[0].Text;
@@ -114,6 +117,7 @@ namespace Projeto_PJS_1_1409
                         
         }
 
+        //rotina de cadastro
         private void btCad_Click_1(object sender, EventArgs e)
         {
             string nome = tx1cad.Text;
@@ -126,6 +130,7 @@ namespace Projeto_PJS_1_1409
             cadastranodic(genero);
         }
 
+        //rotina de edição
         private void bteditcadastro_Click(object sender, EventArgs e)
         {
                        
@@ -136,6 +141,7 @@ namespace Projeto_PJS_1_1409
             
         }
 
+        //rotina de exclusão
         private void btexcluircadastro_Click(object sender, EventArgs e)
         {
             int k;
@@ -150,7 +156,7 @@ namespace Projeto_PJS_1_1409
 
                     if (l[k].genero == teste && l[k].nome == teste1)
                     {
-                        l.Remove(filme);
+                        l.Remove(l[k]);
 
                     }
 
@@ -243,12 +249,13 @@ namespace Projeto_PJS_1_1409
 
         }
         
-
+        //limpa o listview da pesquisa
         private void btexcluipesquisa_Click(object sender, EventArgs e)
         {
             lvpesq.Items.Clear();
         }
-
+        
+        //deixa o combobox com o valor não selecionado em evidencia
         private void Form1_Load(object sender, EventArgs e)
         {
             cb2pesq.SelectedIndex = 9;
