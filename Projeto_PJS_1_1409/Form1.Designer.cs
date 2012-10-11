@@ -70,7 +70,6 @@
             this.btexcluipesquisa = new System.Windows.Forms.Button();
             this.btpesquisa = new System.Windows.Forms.Button();
             this.cb2pesq = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.rt1pesq = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dtpesq = new System.Windows.Forms.DateTimePicker();
@@ -99,9 +98,9 @@
             this.groupBox1.Controls.Add(this.btCad);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F);
             this.groupBox1.Location = new System.Drawing.Point(13, 8);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(615, 523);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
@@ -110,7 +109,7 @@
             // bteditcadastro
             // 
             this.bteditcadastro.Location = new System.Drawing.Point(495, 92);
-            this.bteditcadastro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bteditcadastro.Margin = new System.Windows.Forms.Padding(4);
             this.bteditcadastro.Name = "bteditcadastro";
             this.bteditcadastro.Size = new System.Drawing.Size(112, 28);
             this.bteditcadastro.TabIndex = 25;
@@ -154,7 +153,7 @@
             listViewGroup8,
             listViewGroup9});
             this.lv1cad.Location = new System.Drawing.Point(41, 359);
-            this.lv1cad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lv1cad.Margin = new System.Windows.Forms.Padding(4);
             this.lv1cad.Name = "lv1cad";
             this.lv1cad.Size = new System.Drawing.Size(434, 159);
             this.lv1cad.TabIndex = 26;
@@ -180,7 +179,7 @@
             // btexcluircadastro
             // 
             this.btexcluircadastro.Location = new System.Drawing.Point(495, 128);
-            this.btexcluircadastro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btexcluircadastro.Margin = new System.Windows.Forms.Padding(4);
             this.btexcluircadastro.Name = "btexcluircadastro";
             this.btexcluircadastro.Size = new System.Drawing.Size(112, 28);
             this.btexcluircadastro.TabIndex = 24;
@@ -191,7 +190,7 @@
             // rt1cad
             // 
             this.rt1cad.Location = new System.Drawing.Point(41, 281);
-            this.rt1cad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rt1cad.Margin = new System.Windows.Forms.Padding(4);
             this.rt1cad.Name = "rt1cad";
             this.rt1cad.Size = new System.Drawing.Size(434, 70);
             this.rt1cad.TabIndex = 25;
@@ -200,7 +199,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(38, 262);
+            this.label4.Location = new System.Drawing.Point(42, 262);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(168, 15);
@@ -211,7 +210,7 @@
             // dt1cad
             // 
             this.dt1cad.Location = new System.Drawing.Point(41, 210);
-            this.dt1cad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dt1cad.Margin = new System.Windows.Forms.Padding(4);
             this.dt1cad.Name = "dt1cad";
             this.dt1cad.Size = new System.Drawing.Size(310, 21);
             this.dt1cad.TabIndex = 23;
@@ -240,7 +239,7 @@
             "romance",
             "ficção-científica"});
             this.cb1cad.Location = new System.Drawing.Point(41, 129);
-            this.cb1cad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb1cad.Margin = new System.Windows.Forms.Padding(4);
             this.cb1cad.Name = "cb1cad";
             this.cb1cad.Size = new System.Drawing.Size(434, 23);
             this.cb1cad.TabIndex = 21;
@@ -258,7 +257,7 @@
             // tx1cad
             // 
             this.tx1cad.Location = new System.Drawing.Point(41, 55);
-            this.tx1cad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tx1cad.Margin = new System.Windows.Forms.Padding(4);
             this.tx1cad.Name = "tx1cad";
             this.tx1cad.Size = new System.Drawing.Size(434, 21);
             this.tx1cad.TabIndex = 19;
@@ -276,7 +275,7 @@
             // btCad
             // 
             this.btCad.Location = new System.Drawing.Point(495, 56);
-            this.btCad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btCad.Margin = new System.Windows.Forms.Padding(4);
             this.btCad.Name = "btCad";
             this.btCad.Size = new System.Drawing.Size(112, 28);
             this.btCad.TabIndex = 3;
@@ -290,7 +289,6 @@
             this.groupBox2.Controls.Add(this.btexcluipesquisa);
             this.groupBox2.Controls.Add(this.btpesquisa);
             this.groupBox2.Controls.Add(this.cb2pesq);
-            this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.rt1pesq);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.dtpesq);
@@ -301,9 +299,9 @@
             this.groupBox2.Controls.Add(this.tb1pesq);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F);
             this.groupBox2.Location = new System.Drawing.Point(643, 8);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(511, 523);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
@@ -344,8 +342,8 @@
             listViewGroup16,
             listViewGroup17,
             listViewGroup18});
-            this.lvpesq.Location = new System.Drawing.Point(22, 359);
-            this.lvpesq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvpesq.Location = new System.Drawing.Point(23, 359);
+            this.lvpesq.Margin = new System.Windows.Forms.Padding(4);
             this.lvpesq.Name = "lvpesq";
             this.lvpesq.Size = new System.Drawing.Size(469, 159);
             this.lvpesq.TabIndex = 27;
@@ -370,7 +368,7 @@
             // btexcluipesquisa
             // 
             this.btexcluipesquisa.Location = new System.Drawing.Point(318, 311);
-            this.btexcluipesquisa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btexcluipesquisa.Margin = new System.Windows.Forms.Padding(4);
             this.btexcluipesquisa.Name = "btexcluipesquisa";
             this.btexcluipesquisa.Size = new System.Drawing.Size(112, 28);
             this.btexcluipesquisa.TabIndex = 27;
@@ -381,7 +379,7 @@
             // btpesquisa
             // 
             this.btpesquisa.Location = new System.Drawing.Point(94, 311);
-            this.btpesquisa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btpesquisa.Margin = new System.Windows.Forms.Padding(4);
             this.btpesquisa.Name = "btpesquisa";
             this.btpesquisa.Size = new System.Drawing.Size(112, 28);
             this.btpesquisa.TabIndex = 27;
@@ -404,25 +402,15 @@
             "ficção-científica",
             "Não Selecionado"});
             this.cb2pesq.Location = new System.Drawing.Point(23, 110);
-            this.cb2pesq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb2pesq.Margin = new System.Windows.Forms.Padding(4);
             this.cb2pesq.Name = "cb2pesq";
             this.cb2pesq.Size = new System.Drawing.Size(468, 23);
             this.cb2pesq.TabIndex = 22;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(19, 341);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(110, 15);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Itens Pesquisados:";
-            // 
             // rt1pesq
             // 
             this.rt1pesq.Location = new System.Drawing.Point(23, 215);
-            this.rt1pesq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rt1pesq.Margin = new System.Windows.Forms.Padding(4);
             this.rt1pesq.Name = "rt1pesq";
             this.rt1pesq.Size = new System.Drawing.Size(468, 62);
             this.rt1pesq.TabIndex = 11;
@@ -441,8 +429,8 @@
             // dtpesq
             // 
             this.dtpesq.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpesq.Location = new System.Drawing.Point(272, 158);
-            this.dtpesq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpesq.Location = new System.Drawing.Point(286, 158);
+            this.dtpesq.Margin = new System.Windows.Forms.Padding(4);
             this.dtpesq.Name = "dtpesq";
             this.dtpesq.Size = new System.Drawing.Size(205, 19);
             this.dtpesq.TabIndex = 8;
@@ -451,7 +439,7 @@
             // 
             this.dt1pesq.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt1pesq.Location = new System.Drawing.Point(23, 158);
-            this.dt1pesq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dt1pesq.Margin = new System.Windows.Forms.Padding(4);
             this.dt1pesq.Name = "dt1pesq";
             this.dt1pesq.Size = new System.Drawing.Size(205, 19);
             this.dt1pesq.TabIndex = 7;
@@ -489,7 +477,7 @@
             // tb1pesq
             // 
             this.tb1pesq.Location = new System.Drawing.Point(23, 60);
-            this.tb1pesq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb1pesq.Margin = new System.Windows.Forms.Padding(4);
             this.tb1pesq.Name = "tb1pesq";
             this.tb1pesq.Size = new System.Drawing.Size(468, 21);
             this.tb1pesq.TabIndex = 0;
@@ -502,7 +490,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Projeto PJS LOCADORA";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -535,7 +523,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb1pesq;
         private System.Windows.Forms.ComboBox cb2pesq;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RichTextBox rt1pesq;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button bteditcadastro;
