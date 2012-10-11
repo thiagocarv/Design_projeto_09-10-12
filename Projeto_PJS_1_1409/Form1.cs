@@ -178,16 +178,15 @@ namespace Projeto_PJS_1_1409
                 listapesq.AddRange(l);
 
             //pesquisa por genero
-            for (int k = 0; k < listapesq.Count;)
+            for (int k = 0; k < listapesq.Count; k++)
             {
                 if (cb2pesq.SelectedIndex == 9)
                     break;
                 if (listapesq[k].genero != cb2pesq.SelectedItem.ToString())
                 {
                     listapesq.Remove(listapesq[k]);
+                    k--;
                 }
-                else
-                k++;
             }  
 
             //rotina de pesquisa por nome
@@ -259,6 +258,11 @@ namespace Projeto_PJS_1_1409
         private void Form1_Load(object sender, EventArgs e)
         {
             cb2pesq.SelectedIndex = 9;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
 
        
