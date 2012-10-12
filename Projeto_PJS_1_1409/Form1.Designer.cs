@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ação", System.Windows.Forms.HorizontalAlignment.Center);
             System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("aventura", System.Windows.Forms.HorizontalAlignment.Center);
             System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("comédia", System.Windows.Forms.HorizontalAlignment.Center);
@@ -78,8 +79,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tb1pesq = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -101,7 +104,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(519, 523);
+            this.groupBox1.Size = new System.Drawing.Size(458, 401);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro";
@@ -110,10 +113,10 @@
             // 
             this.bteditcadastro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bteditcadastro.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.bteditcadastro.Location = new System.Drawing.Point(201, 311);
+            this.bteditcadastro.Location = new System.Drawing.Point(284, 162);
             this.bteditcadastro.Margin = new System.Windows.Forms.Padding(4);
             this.bteditcadastro.Name = "bteditcadastro";
-            this.bteditcadastro.Size = new System.Drawing.Size(112, 28);
+            this.bteditcadastro.Size = new System.Drawing.Size(75, 23);
             this.bteditcadastro.TabIndex = 26;
             this.bteditcadastro.Text = "Editar";
             this.bteditcadastro.UseVisualStyleBackColor = true;
@@ -164,10 +167,10 @@
             listViewGroup7,
             listViewGroup8,
             listViewGroup9});
-            this.lv1cad.Location = new System.Drawing.Point(41, 359);
+            this.lv1cad.Location = new System.Drawing.Point(8, 193);
             this.lv1cad.Margin = new System.Windows.Forms.Padding(4);
             this.lv1cad.Name = "lv1cad";
-            this.lv1cad.Size = new System.Drawing.Size(434, 159);
+            this.lv1cad.Size = new System.Drawing.Size(434, 197);
             this.lv1cad.TabIndex = 25;
             this.lv1cad.TabStop = false;
             this.lv1cad.UseCompatibleStateImageBehavior = false;
@@ -177,13 +180,13 @@
             // lvnome
             // 
             this.lvnome.Text = "Nome do filme";
-            this.lvnome.Width = 110;
+            this.lvnome.Width = 104;
             // 
             // lvdata
             // 
             this.lvdata.Text = "Data";
             this.lvdata.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.lvdata.Width = 70;
+            this.lvdata.Width = 75;
             // 
             // lvlocal
             // 
@@ -195,10 +198,10 @@
             // 
             this.btexcluircadastro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btexcluircadastro.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btexcluircadastro.Location = new System.Drawing.Point(363, 311);
+            this.btexcluircadastro.Location = new System.Drawing.Point(367, 162);
             this.btexcluircadastro.Margin = new System.Windows.Forms.Padding(4);
             this.btexcluircadastro.Name = "btexcluircadastro";
-            this.btexcluircadastro.Size = new System.Drawing.Size(112, 28);
+            this.btexcluircadastro.Size = new System.Drawing.Size(75, 23);
             this.btexcluircadastro.TabIndex = 27;
             this.btexcluircadastro.Text = "Excluir";
             this.btexcluircadastro.UseVisualStyleBackColor = true;
@@ -206,17 +209,17 @@
             // 
             // rt1cad
             // 
-            this.rt1cad.Location = new System.Drawing.Point(41, 207);
+            this.rt1cad.Location = new System.Drawing.Point(8, 127);
             this.rt1cad.Margin = new System.Windows.Forms.Padding(4);
             this.rt1cad.Name = "rt1cad";
-            this.rt1cad.Size = new System.Drawing.Size(434, 70);
+            this.rt1cad.Size = new System.Drawing.Size(434, 25);
             this.rt1cad.TabIndex = 24;
             this.rt1cad.Text = "";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 185);
+            this.label4.Location = new System.Drawing.Point(8, 108);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(168, 15);
@@ -226,16 +229,16 @@
             // 
             // dt1cad
             // 
-            this.dt1cad.Location = new System.Drawing.Point(45, 160);
+            this.dt1cad.Location = new System.Drawing.Point(163, 83);
             this.dt1cad.Margin = new System.Windows.Forms.Padding(4);
             this.dt1cad.Name = "dt1cad";
-            this.dt1cad.Size = new System.Drawing.Size(310, 21);
+            this.dt1cad.Size = new System.Drawing.Size(259, 21);
             this.dt1cad.TabIndex = 23;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 137);
+            this.label3.Location = new System.Drawing.Point(169, 64);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(164, 15);
@@ -255,16 +258,16 @@
             "infantil",
             "romance",
             "ficção-científica"});
-            this.cb1cad.Location = new System.Drawing.Point(41, 104);
+            this.cb1cad.Location = new System.Drawing.Point(8, 81);
             this.cb1cad.Margin = new System.Windows.Forms.Padding(4);
             this.cb1cad.Name = "cb1cad";
-            this.cb1cad.Size = new System.Drawing.Size(434, 23);
+            this.cb1cad.Size = new System.Drawing.Size(147, 23);
             this.cb1cad.TabIndex = 21;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 85);
+            this.label2.Location = new System.Drawing.Point(8, 62);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 15);
@@ -273,16 +276,17 @@
             // 
             // tx1cad
             // 
-            this.tx1cad.Location = new System.Drawing.Point(41, 55);
+            this.tx1cad.Location = new System.Drawing.Point(8, 37);
             this.tx1cad.Margin = new System.Windows.Forms.Padding(4);
             this.tx1cad.Name = "tx1cad";
             this.tx1cad.Size = new System.Drawing.Size(434, 21);
             this.tx1cad.TabIndex = 19;
+            this.tx1cad.Leave += new System.EventHandler(this.tx1cad_Leave);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 36);
+            this.label1.Location = new System.Drawing.Point(8, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 15);
@@ -293,10 +297,10 @@
             // 
             this.btCad.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btCad.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btCad.Location = new System.Drawing.Point(41, 311);
+            this.btCad.Location = new System.Drawing.Point(201, 162);
             this.btCad.Margin = new System.Windows.Forms.Padding(4);
             this.btCad.Name = "btCad";
-            this.btCad.Size = new System.Drawing.Size(112, 28);
+            this.btCad.Size = new System.Drawing.Size(75, 23);
             this.btCad.TabIndex = 25;
             this.btCad.Text = "Cadastrar";
             this.btCad.UseVisualStyleBackColor = true;
@@ -318,11 +322,11 @@
             this.groupBox2.Controls.Add(this.tb1pesq);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F);
             this.groupBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.groupBox2.Location = new System.Drawing.Point(573, 8);
+            this.groupBox2.Location = new System.Drawing.Point(499, 8);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(511, 523);
+            this.groupBox2.Size = new System.Drawing.Size(459, 401);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pesquisa";
@@ -371,10 +375,10 @@
             listViewGroup16,
             listViewGroup17,
             listViewGroup18});
-            this.lvpesq.Location = new System.Drawing.Point(23, 359);
+            this.lvpesq.Location = new System.Drawing.Point(11, 193);
             this.lvpesq.Margin = new System.Windows.Forms.Padding(4);
             this.lvpesq.Name = "lvpesq";
-            this.lvpesq.Size = new System.Drawing.Size(468, 159);
+            this.lvpesq.Size = new System.Drawing.Size(434, 197);
             this.lvpesq.TabIndex = 27;
             this.lvpesq.UseCompatibleStateImageBehavior = false;
             this.lvpesq.View = System.Windows.Forms.View.Details;
@@ -382,13 +386,13 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Nome do filme";
-            this.columnHeader1.Width = 113;
+            this.columnHeader1.Width = 109;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Data";
             this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 101;
+            this.columnHeader2.Width = 71;
             // 
             // columnHeader3
             // 
@@ -398,10 +402,10 @@
             // 
             // btexcluipesquisa
             // 
-            this.btexcluipesquisa.Location = new System.Drawing.Point(318, 311);
+            this.btexcluipesquisa.Location = new System.Drawing.Point(370, 160);
             this.btexcluipesquisa.Margin = new System.Windows.Forms.Padding(4);
             this.btexcluipesquisa.Name = "btexcluipesquisa";
-            this.btexcluipesquisa.Size = new System.Drawing.Size(112, 28);
+            this.btexcluipesquisa.Size = new System.Drawing.Size(75, 23);
             this.btexcluipesquisa.TabIndex = 27;
             this.btexcluipesquisa.Text = "Limpar";
             this.btexcluipesquisa.UseVisualStyleBackColor = true;
@@ -409,10 +413,10 @@
             // 
             // btpesquisa
             // 
-            this.btpesquisa.Location = new System.Drawing.Point(94, 311);
+            this.btpesquisa.Location = new System.Drawing.Point(287, 160);
             this.btpesquisa.Margin = new System.Windows.Forms.Padding(4);
             this.btpesquisa.Name = "btpesquisa";
-            this.btpesquisa.Size = new System.Drawing.Size(112, 28);
+            this.btpesquisa.Size = new System.Drawing.Size(75, 23);
             this.btpesquisa.TabIndex = 27;
             this.btpesquisa.Text = "Pesquisar";
             this.btpesquisa.UseVisualStyleBackColor = true;
@@ -432,25 +436,25 @@
             "romance",
             "ficção-científica",
             "Não Selecionado"});
-            this.cb2pesq.Location = new System.Drawing.Point(23, 110);
+            this.cb2pesq.Location = new System.Drawing.Point(8, 81);
             this.cb2pesq.Margin = new System.Windows.Forms.Padding(4);
             this.cb2pesq.Name = "cb2pesq";
-            this.cb2pesq.Size = new System.Drawing.Size(468, 23);
+            this.cb2pesq.Size = new System.Drawing.Size(147, 23);
             this.cb2pesq.TabIndex = 22;
             // 
             // rt1pesq
             // 
-            this.rt1pesq.Location = new System.Drawing.Point(23, 215);
+            this.rt1pesq.Location = new System.Drawing.Point(8, 127);
             this.rt1pesq.Margin = new System.Windows.Forms.Padding(4);
             this.rt1pesq.Name = "rt1pesq";
-            this.rt1pesq.Size = new System.Drawing.Size(468, 62);
+            this.rt1pesq.Size = new System.Drawing.Size(437, 25);
             this.rt1pesq.TabIndex = 11;
             this.rt1pesq.Text = "";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 196);
+            this.label9.Location = new System.Drawing.Point(8, 108);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(182, 15);
@@ -459,26 +463,28 @@
             // 
             // dtpesq
             // 
-            this.dtpesq.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpesq.Location = new System.Drawing.Point(286, 158);
+            this.dtpesq.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpesq.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpesq.Location = new System.Drawing.Point(347, 81);
             this.dtpesq.Margin = new System.Windows.Forms.Padding(4);
             this.dtpesq.Name = "dtpesq";
-            this.dtpesq.Size = new System.Drawing.Size(205, 19);
+            this.dtpesq.Size = new System.Drawing.Size(88, 21);
             this.dtpesq.TabIndex = 8;
             // 
             // dt1pesq
             // 
-            this.dt1pesq.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt1pesq.Location = new System.Drawing.Point(23, 158);
+            this.dt1pesq.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt1pesq.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dt1pesq.Location = new System.Drawing.Point(255, 81);
             this.dt1pesq.Margin = new System.Windows.Forms.Padding(4);
             this.dt1pesq.Name = "dt1pesq";
-            this.dt1pesq.Size = new System.Drawing.Size(205, 19);
+            this.dt1pesq.Size = new System.Drawing.Size(84, 21);
             this.dt1pesq.TabIndex = 7;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(20, 137);
+            this.label7.Location = new System.Drawing.Point(284, 62);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 15);
@@ -488,7 +494,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 85);
+            this.label6.Location = new System.Drawing.Point(8, 62);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 15);
@@ -498,7 +504,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 40);
+            this.label5.Location = new System.Drawing.Point(8, 18);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(178, 15);
@@ -507,17 +513,21 @@
             // 
             // tb1pesq
             // 
-            this.tb1pesq.Location = new System.Drawing.Point(23, 60);
+            this.tb1pesq.Location = new System.Drawing.Point(8, 37);
             this.tb1pesq.Margin = new System.Windows.Forms.Padding(4);
             this.tb1pesq.Name = "tb1pesq";
-            this.tb1pesq.Size = new System.Drawing.Size(468, 21);
+            this.tb1pesq.Size = new System.Drawing.Size(437, 21);
             this.tb1pesq.TabIndex = 0;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1098, 533);
+            this.ClientSize = new System.Drawing.Size(970, 419);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -534,6 +544,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -572,6 +583,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
 
     }
 }

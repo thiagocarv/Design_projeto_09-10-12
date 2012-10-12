@@ -265,8 +265,20 @@ namespace Projeto_PJS_1_1409
 
         }
 
-       
+        private void tx1cad_Leave(object sender, EventArgs e)
+        {
+            if (tx1cad.Text == "")
+            {
+                errorProvider1.SetError(tx1cad, "Atenção você esta gravando sem um nome de filme!");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
 
+       
+      
         
     }
 }
