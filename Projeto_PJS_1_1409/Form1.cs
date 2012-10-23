@@ -148,21 +148,21 @@ namespace Projeto_PJS_1_1409
             
             string teste = lv1cad.SelectedItems[0].Group.ToString();
             string teste1 = lv1cad.SelectedItems[0].Text;
-
-            foreach (List<Filmes> l in dic.Values)
-            {
-                for (k = 0; k < l.Count;k++ )
+            
+              foreach (List<Filmes> l in dic.Values)
                 {
-
-                    if (l[k].genero == teste && l[k].nome == teste1)
+                    for (k = 0; k < l.Count; k++)
                     {
-                        l.Remove(l[k]);
+
+                        if (l[k].genero == teste && l[k].nome == teste1)
+                        {
+                            l.Remove(l[k]);
+
+                        }
 
                     }
-
-                }                
-            }
-
+                }
+         
             lv1cad.SelectedItems[0].Remove();
         }
 
@@ -260,16 +260,13 @@ namespace Projeto_PJS_1_1409
             cb2pesq.SelectedIndex = 9;
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tx1cad_Leave(object sender, EventArgs e)
         {
             if (tx1cad.Text == "")
             {
                 errorProvider1.SetError(tx1cad, "Atenção você esta gravando sem um nome de filme!");
+                //System.Media.SoundPlayer.Equals(@"C:\Users\THIAGO\Music\Alan Jackson - 2010\Alan Jackson - Freight Train (2010)", "");
+
             }
             else
             {
