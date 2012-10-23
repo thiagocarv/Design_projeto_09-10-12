@@ -145,11 +145,15 @@ namespace Projeto_PJS_1_1409
         private void btexcluircadastro_Click(object sender, EventArgs e)
         {
             int k;
-            
-            string teste = lv1cad.SelectedItems[0].Group.ToString();
-            string teste1 = lv1cad.SelectedItems[0].Text;
-            
-              foreach (List<Filmes> l in dic.Values)
+            DialogResult pergunta;
+            pergunta = MessageBox.Show("Deseja Realmente Excluir", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (pergunta == DialogResult.Yes)
+            {
+                string teste = lv1cad.SelectedItems[0].Group.ToString();
+                string teste1 = lv1cad.SelectedItems[0].Text;
+
+                foreach (List<Filmes> l in dic.Values)
                 {
                     for (k = 0; k < l.Count; k++)
                     {
@@ -162,10 +166,14 @@ namespace Projeto_PJS_1_1409
 
                     }
                 }
-         
-            lv1cad.SelectedItems[0].Remove();
-        }
 
+                lv1cad.SelectedItems[0].Remove();
+            }
+            else
+                MessageBox.Show("Operação Cancelada", "Abortado", MessageBoxButtons.OK);
+        
+        }
+        
         //rotinas do botão pesquisar
         private void btpesquisa_Click(object sender, EventArgs e)
         {
@@ -251,7 +259,13 @@ namespace Projeto_PJS_1_1409
         //limpa o listview da pesquisa
         private void btexcluipesquisa_Click(object sender, EventArgs e)
         {
-            lvpesq.Items.Clear();
+            DialogResult pergunta;
+
+            pergunta = MessageBox.Show("Esta ação irá limpar a pesquisa, deseja continuar?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (pergunta == DialogResult.Yes)
+                lvpesq.Items.Clear();
+            else
+                MessageBox.Show("Operação cancelada", "Informação", MessageBoxButtons.OK);
         }
         
         //deixa o combobox com o valor não selecionado em evidencia
@@ -264,7 +278,7 @@ namespace Projeto_PJS_1_1409
         {
             if (tx1cad.Text == "")
             {
-                errorProvider1.SetError(tx1cad, "Atenção você esta gravando sem um nome de filme!");
+                errorProvider1.SetError(tx1cad, "Atenção o campo do nome do filme esta vazio, é necessário um nome para cadastrar!");
                 //System.Media.SoundPlayer.Equals(@"C:\Users\THIAGO\Music\Alan Jackson - 2010\Alan Jackson - Freight Train (2010)", "");
 
             }
@@ -272,7 +286,7 @@ namespace Projeto_PJS_1_1409
             {
                 errorProvider1.Clear();
             }
-        }
+        }   
 
        
       

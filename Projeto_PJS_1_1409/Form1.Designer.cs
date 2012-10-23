@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewGroup listViewGroup19 = new System.Windows.Forms.ListViewGroup("ação", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup20 = new System.Windows.Forms.ListViewGroup("aventura", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup21 = new System.Windows.Forms.ListViewGroup("comédia", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup22 = new System.Windows.Forms.ListViewGroup("terror", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup23 = new System.Windows.Forms.ListViewGroup("suspense", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup24 = new System.Windows.Forms.ListViewGroup("documentario", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup25 = new System.Windows.Forms.ListViewGroup("infantil", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup26 = new System.Windows.Forms.ListViewGroup("romance", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup27 = new System.Windows.Forms.ListViewGroup("ficcao-Cientifica", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup28 = new System.Windows.Forms.ListViewGroup("ação", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup29 = new System.Windows.Forms.ListViewGroup("aventura", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup30 = new System.Windows.Forms.ListViewGroup("comédia", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup31 = new System.Windows.Forms.ListViewGroup("terror", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup32 = new System.Windows.Forms.ListViewGroup("suspense", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup33 = new System.Windows.Forms.ListViewGroup("documentario", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup34 = new System.Windows.Forms.ListViewGroup("infantil", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup35 = new System.Windows.Forms.ListViewGroup("romance", System.Windows.Forms.HorizontalAlignment.Center);
-            System.Windows.Forms.ListViewGroup listViewGroup36 = new System.Windows.Forms.ListViewGroup("ficcao-Cientifica", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup37 = new System.Windows.Forms.ListViewGroup("ação", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup38 = new System.Windows.Forms.ListViewGroup("aventura", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup39 = new System.Windows.Forms.ListViewGroup("comédia", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup40 = new System.Windows.Forms.ListViewGroup("terror", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup41 = new System.Windows.Forms.ListViewGroup("suspense", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup42 = new System.Windows.Forms.ListViewGroup("documentario", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup43 = new System.Windows.Forms.ListViewGroup("infantil", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup44 = new System.Windows.Forms.ListViewGroup("romance", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup45 = new System.Windows.Forms.ListViewGroup("ficcao-Cientifica", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup46 = new System.Windows.Forms.ListViewGroup("ação", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup47 = new System.Windows.Forms.ListViewGroup("aventura", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup48 = new System.Windows.Forms.ListViewGroup("comédia", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup49 = new System.Windows.Forms.ListViewGroup("terror", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup50 = new System.Windows.Forms.ListViewGroup("suspense", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup51 = new System.Windows.Forms.ListViewGroup("documentario", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup52 = new System.Windows.Forms.ListViewGroup("infantil", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup53 = new System.Windows.Forms.ListViewGroup("romance", System.Windows.Forms.HorizontalAlignment.Center);
+            System.Windows.Forms.ListViewGroup listViewGroup54 = new System.Windows.Forms.ListViewGroup("ficcao-Cientifica", System.Windows.Forms.HorizontalAlignment.Center);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bteditcadastro = new System.Windows.Forms.Button();
             this.lv1cad = new System.Windows.Forms.ListView();
@@ -64,6 +64,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btCad = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.lvpesq = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -80,7 +81,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tb1pesq = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -88,7 +88,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.groupBox1.Controls.Add(this.bteditcadastro);
             this.groupBox1.Controls.Add(this.lv1cad);
             this.groupBox1.Controls.Add(this.btexcluircadastro);
@@ -102,12 +102,12 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btCad);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F);
-            this.groupBox1.Location = new System.Drawing.Point(15, 13);
+            this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(458, 405);
+            this.groupBox1.Size = new System.Drawing.Size(458, 419);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro";
@@ -139,47 +139,47 @@
             this.lvlocal});
             this.lv1cad.FullRowSelect = true;
             this.lv1cad.GridLines = true;
-            listViewGroup19.Header = "ação";
-            listViewGroup19.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup19.Name = "ação";
-            listViewGroup20.Header = "aventura";
-            listViewGroup20.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup20.Name = "aventura";
-            listViewGroup21.Header = "comédia";
-            listViewGroup21.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup21.Name = "comédia";
-            listViewGroup22.Header = "terror";
-            listViewGroup22.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup22.Name = "terror";
-            listViewGroup23.Header = "suspense";
-            listViewGroup23.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup23.Name = "suspense";
-            listViewGroup24.Header = "documentario";
-            listViewGroup24.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup24.Name = "documentário";
-            listViewGroup25.Header = "infantil";
-            listViewGroup25.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup25.Name = "infantil";
-            listViewGroup26.Header = "romance";
-            listViewGroup26.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup26.Name = "romance";
-            listViewGroup27.Header = "ficcao-Cientifica";
-            listViewGroup27.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup27.Name = "ficção-científica";
+            listViewGroup37.Header = "ação";
+            listViewGroup37.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup37.Name = "ação";
+            listViewGroup38.Header = "aventura";
+            listViewGroup38.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup38.Name = "aventura";
+            listViewGroup39.Header = "comédia";
+            listViewGroup39.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup39.Name = "comédia";
+            listViewGroup40.Header = "terror";
+            listViewGroup40.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup40.Name = "terror";
+            listViewGroup41.Header = "suspense";
+            listViewGroup41.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup41.Name = "suspense";
+            listViewGroup42.Header = "documentario";
+            listViewGroup42.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup42.Name = "documentário";
+            listViewGroup43.Header = "infantil";
+            listViewGroup43.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup43.Name = "infantil";
+            listViewGroup44.Header = "romance";
+            listViewGroup44.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup44.Name = "romance";
+            listViewGroup45.Header = "ficcao-Cientifica";
+            listViewGroup45.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup45.Name = "ficção-científica";
             this.lv1cad.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup19,
-            listViewGroup20,
-            listViewGroup21,
-            listViewGroup22,
-            listViewGroup23,
-            listViewGroup24,
-            listViewGroup25,
-            listViewGroup26,
-            listViewGroup27});
+            listViewGroup37,
+            listViewGroup38,
+            listViewGroup39,
+            listViewGroup40,
+            listViewGroup41,
+            listViewGroup42,
+            listViewGroup43,
+            listViewGroup44,
+            listViewGroup45});
             this.lv1cad.Location = new System.Drawing.Point(8, 191);
             this.lv1cad.Margin = new System.Windows.Forms.Padding(4);
             this.lv1cad.Name = "lv1cad";
-            this.lv1cad.Size = new System.Drawing.Size(434, 201);
+            this.lv1cad.Size = new System.Drawing.Size(434, 200);
             this.lv1cad.TabIndex = 25;
             this.lv1cad.TabStop = false;
             this.lv1cad.UseCompatibleStateImageBehavior = false;
@@ -209,6 +209,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.btexcluircadastro.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btexcluircadastro.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.btexcluircadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F);
             this.btexcluircadastro.Location = new System.Drawing.Point(367, 160);
             this.btexcluircadastro.Margin = new System.Windows.Forms.Padding(4);
             this.btexcluircadastro.Name = "btexcluircadastro";
@@ -325,10 +326,10 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.btCad.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btCad.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.btCad.Location = new System.Drawing.Point(225, 160);
+            this.btCad.Location = new System.Drawing.Point(220, 160);
             this.btCad.Margin = new System.Windows.Forms.Padding(4);
             this.btCad.Name = "btCad";
-            this.btCad.Size = new System.Drawing.Size(63, 23);
+            this.btCad.Size = new System.Drawing.Size(68, 23);
             this.btCad.TabIndex = 25;
             this.btCad.Text = "Cadastrar";
             this.btCad.UseVisualStyleBackColor = true;
@@ -336,7 +337,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.groupBox2.AutoSize = true;
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.lvpesq);
@@ -353,15 +354,24 @@
             this.groupBox2.Controls.Add(this.tb1pesq);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F);
             this.groupBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.groupBox2.Location = new System.Drawing.Point(481, 13);
+            this.groupBox2.Location = new System.Drawing.Point(482, 13);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.MinimumSize = new System.Drawing.Size(459, 401);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(459, 405);
+            this.groupBox2.Size = new System.Drawing.Size(459, 419);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pesquisa";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(321, 88);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(24, 15);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "até";
             // 
             // lvpesq
             // 
@@ -374,47 +384,47 @@
             this.columnHeader3});
             this.lvpesq.FullRowSelect = true;
             this.lvpesq.GridLines = true;
-            listViewGroup28.Header = "ação";
-            listViewGroup28.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup28.Name = "ação";
-            listViewGroup29.Header = "aventura";
-            listViewGroup29.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup29.Name = "aventura";
-            listViewGroup30.Header = "comédia";
-            listViewGroup30.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup30.Name = "comédia";
-            listViewGroup31.Header = "terror";
-            listViewGroup31.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup31.Name = "terror";
-            listViewGroup32.Header = "suspense";
-            listViewGroup32.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup32.Name = "suspense";
-            listViewGroup33.Header = "documentario";
-            listViewGroup33.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup33.Name = "documentário";
-            listViewGroup34.Header = "infantil";
-            listViewGroup34.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup34.Name = "infantil";
-            listViewGroup35.Header = "romance";
-            listViewGroup35.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup35.Name = "romance";
-            listViewGroup36.Header = "ficcao-Cientifica";
-            listViewGroup36.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            listViewGroup36.Name = "ficção-científica";
+            listViewGroup46.Header = "ação";
+            listViewGroup46.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup46.Name = "ação";
+            listViewGroup47.Header = "aventura";
+            listViewGroup47.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup47.Name = "aventura";
+            listViewGroup48.Header = "comédia";
+            listViewGroup48.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup48.Name = "comédia";
+            listViewGroup49.Header = "terror";
+            listViewGroup49.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup49.Name = "terror";
+            listViewGroup50.Header = "suspense";
+            listViewGroup50.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup50.Name = "suspense";
+            listViewGroup51.Header = "documentario";
+            listViewGroup51.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup51.Name = "documentário";
+            listViewGroup52.Header = "infantil";
+            listViewGroup52.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup52.Name = "infantil";
+            listViewGroup53.Header = "romance";
+            listViewGroup53.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup53.Name = "romance";
+            listViewGroup54.Header = "ficcao-Cientifica";
+            listViewGroup54.HeaderAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            listViewGroup54.Name = "ficção-científica";
             this.lvpesq.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup28,
-            listViewGroup29,
-            listViewGroup30,
-            listViewGroup31,
-            listViewGroup32,
-            listViewGroup33,
-            listViewGroup34,
-            listViewGroup35,
-            listViewGroup36});
+            listViewGroup46,
+            listViewGroup47,
+            listViewGroup48,
+            listViewGroup49,
+            listViewGroup50,
+            listViewGroup51,
+            listViewGroup52,
+            listViewGroup53,
+            listViewGroup54});
             this.lvpesq.Location = new System.Drawing.Point(8, 191);
             this.lvpesq.Margin = new System.Windows.Forms.Padding(4);
             this.lvpesq.Name = "lvpesq";
-            this.lvpesq.Size = new System.Drawing.Size(434, 201);
+            this.lvpesq.Size = new System.Drawing.Size(434, 200);
             this.lvpesq.TabIndex = 27;
             this.lvpesq.UseCompatibleStateImageBehavior = false;
             this.lvpesq.View = System.Windows.Forms.View.Details;
@@ -581,20 +591,11 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(321, 88);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 15);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "até";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(953, 430);
+            this.ClientSize = new System.Drawing.Size(954, 445);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
